@@ -39,8 +39,8 @@ async def ask(ctx: interactions.CommandContext, question: str):
     await send_message_to_discord(ctx, *construct_answer(question))
 
 #If DISCORD_TOKEN, OPENAI_API_KEY, and PERSONALITY are not set, quit
-if DISCORD_TOKEN is None or OPENAI_API_KEY is None:
-    print("DISCORD_TOKEN and OPENAI_API_KEY must be set as environment variables")
+if DISCORD_TOKEN is None or OPENAI_API_KEY is None or VERSION is None or NAME is None:
+    print("DISCORD_TOKEN, OPENAI_API_KEY, VERSION, and NAME must be set as environment variables.")
     quit()
 
 
