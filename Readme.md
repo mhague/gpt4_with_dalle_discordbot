@@ -53,8 +53,10 @@ docker-compose up --build -d
 Once the bot is running and connected to your Discord server, you can interact with it using the `ask` command followed by your question:
 
 ```
-/ask What is the capital of France?
+/ask question: write a 2 paragraph story about a hero named Oscar
+
 ```
+![image](https://user-images.githubusercontent.com/5944910/229381358-0a5d6c71-6a3d-4ae3-ac63-5ab249ab53ff.png)
 
 The bot will respond with an answer, a related image (if possible), an image descriptor, and a summary of the question.
 
